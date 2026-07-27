@@ -1,1 +1,3 @@
-print("Hello, AI Security Assistant!")
+name = input("What is your name? ")
+
+print("Hello", name)
