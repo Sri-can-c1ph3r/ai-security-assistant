@@ -1,25 +1,27 @@
-print("🛡️ Welcome to AI Security Assistant!")
+print("🛡️ Welcome to AI Security Assistant")
 
-name = input("What is your name? ")
+while True:
 
-print("Hello", name)
+    print("\n==========================")
+    print("1. Learn SQL Injection")
+    print("2. Learn XSS")
+    print("3. Password Tips")
+    print("4. Exit")
 
-print("\nChoose a topic:")
+    choice = input("Choose an option: ")
 
-print("1. SQL Injection")
-print("2. XSS")
-print("3. Password Security")
+    if choice == "1":
+        print("\nSQL Injection attacks databases by manipulating queries.")
 
-choice = input("Enter 1, 2 or 3: ")
+    elif choice == "2":
+        print("\nXSS executes malicious JavaScript in another user's browser.")
 
-if choice == "1":
-    print("SQL Injection lets attackers manipulate database queries.")
+    elif choice == "3":
+        print("\nUse a password manager and enable MFA.")
 
-elif choice == "2":
-    print("XSS allows attackers to run JavaScript in another user's browser.")
+    elif choice == "4":
+        print("\nGoodbye!")
+        break
 
-elif choice == "3":
-    print("Use long, unique passwords and enable MFA.")
-
-else:
-    print("Sorry, I don't know that topic yet.")
+    else:
+        print("\nInvalid option.")
