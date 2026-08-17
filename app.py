@@ -1,43 +1,11 @@
-def security_quiz():
-    print("\n🧠 Security Quiz")
+if score == 3:
+    print("🏆 Excellent! You got everything right!")
 
-    questions = [
-        {
-            "question": "Which vulnerability involves injecting malicious SQL into a database?",
-            "options": ["XSS", "SQL Injection", "CSRF", "SSRF"],
-            "answer": "B"
-        },
-        {
-            "question": "Which vulnerability can execute malicious JavaScript in a user's browser?",
-            "options": ["XSS", "SQL Injection", "CSRF", "SSRF"],
-            "answer": "A"
-        },
-        {
-            "question": "What security feature adds an extra verification step during login?",
-            "options": ["FTP", "MFA", "HTTP", "DNS"],
-            "answer": "B"
-        }
-    ]
+elif score == 2:
+    print("👍 Good job! You have a solid understanding.")
 
-    random.shuffle(questions)
+elif score == 1:
+    print("📚 Keep practicing. You're getting there!")
 
-    score = 0
-
-    for question in questions:
-        print("\n" + question["question"])
-
-        print("A.", question["options"][0])
-        print("B.", question["options"][1])
-        print("C.", question["options"][2])
-        print("D.", question["options"][3])
-
-        answer = input("Your answer: ")
-
-        if answer.upper() == question["answer"]:
-            print("✅ Correct!")
-            score = score + 1
-        else:
-            print("❌ Wrong!")
-
-    print("\n🎉 Quiz Complete!")
-    print("Your score:", score, "/", len(questions))
+else:
+    print("💪 Don't worry! Time to review the basics.")
