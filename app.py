@@ -1,11 +1,7 @@
-if score == 3:
-    print("🏆 Excellent! You got everything right!")
+print("🛡️ Welcome to AI Security Assistant!")
 
-elif score == 2:
-    print("👍 Good job! You have a solid understanding.")
+name = input("What is your name? ")
 
-elif score == 1:
-    print("📚 Keep practicing. You're getting there!")
+print("\nHello", name, "👋")
 
-else:
-    print("💪 Don't worry! Time to review the basics.")
+while True:
