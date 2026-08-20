@@ -1,7 +1,11 @@
-print("🛡️ Welcome to AI Security Assistant!")
+if choice == "1":
+    history.append("SQL Injection")
 
-name = input("What is your name? ")
+elif choice == "2":
+    history.append("XSS")
 
-print("\nHello", name, "👋")
+elif choice == "3":
+    history.append("Password Tips")
 
-while True:
+elif choice == "4":
+    history.append("Security Quiz")
